@@ -46,7 +46,7 @@ const PopUpContainer = ({ onClose }) => {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Origin': 'https://customer-labs-react-test-vnxobthlx-naveens-projects-8a722c31.vercel.app'
                 },
                 body: JSON.stringify(dataToSend),
             });
