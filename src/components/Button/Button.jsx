@@ -1,19 +1,19 @@
 import { useState } from "react";
-import PopUp from "../PopUp/PopUp";
+import PopUpContainer from "../PopUp/PopUpContainer";
 
 const Button = () => {
-  
+
     const [showPopup, setShowPopup] = useState(false);
 
     const handleSaveSegment = () => {
-      setShowPopup(true);
+        setShowPopup(true);
     };
-  
+
     return (
-      <div className="App">
-        <button onClick={handleSaveSegment}>Save segment</button>
-        {showPopup && <PopUp onClose={() => setShowPopup(false)} />}
-      </div>
+        <div className="App">
+            <button onClick={handleSaveSegment}>Save segment</button>
+            {showPopup && <PopUpContainer onClose={() => setShowPopup(false)} />}
+        </div>
     );
 }
 
